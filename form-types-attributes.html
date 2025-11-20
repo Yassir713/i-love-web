@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Vragen</title>
+
+</head>
+<style>
+
+body {
+    margin-bottom: 100px;
+}
+
+textarea {
+    width: 100%;
+}
+
+h1 {
+    color: red;
+}
+
+legend {
+    font-weight: bold;
+    color: blue;
+}
+
+p {
+    line-height: 50px;
+}
+
+/* unvisited link */
+a:link {
+  color: red;
+}
+
+/* visited link */
+a:visited {
+  color: green;
+}
+
+/* mouse over link */
+a:hover {
+  color: hotpink;
+}
+
+/* selected link */
+a:active {
+  color: blue;
+}
+
+.hovereffect p {
+  display: none;
+  background-color: yellow;
+  padding: 20px;
+}
+
+.hovereffect:hover p {
+  display: block;
+}
+
+.child p:first-child {
+  color: blue;
+}
+
+input:valid {
+  background-color: ivory;
+  border: none;
+  outline: 2px solid deepskyblue;
+  border-radius: 5px;
+  accent-color: gold;
+}
+
+input:invalid {
+  background-color: ivory;
+  border: none;
+  outline: 2px solid red;
+  border-radius: 5px;
+}
+</style>
+<body>
+    
+    <h1>Vragen Over Formulieren</h1>
+<form>
+    <fieldset>
+        <legend>Waarom heeft elke input een label nodig?</legend>
+        <p>Een zichtbaar en overzichtelijk label zorgt ervoor dat alle gebruikers beter begrijpen wat ze in een formulier moeten invullen.</p>
+    </fieldset>
+
+    <fieldset>
+        <legend>Wat doe je met de attributen type, autocomplete, inputmode en enterkeyhint?</legend>
+        <p>Met het type-attribuut kan je verschillende formulieren gebruiken die ieder een verschillende functie bieden. Autocomplete voorspelt en suggereert woorden of zinnen die u eerder in je browser hebt getypt, meestal als je een emailadres opschrijft of naam schrijft. Inputtype geeft het soort toetsenbord dat wordt getoond op telefoon of tablet. Enterkeyhint kan de naam van de enterknop veranderen op een visuele toetsenbord(meestal telefoon/tablet).</p>
+    </fieldset>
+    
+    <fieldset>
+        <legend>Wat doen fieldsets en legends in een formulier?</legend>
+        <p>Ik heb deze vragen lijst met fieldsets en legends gemaakt. Met fieldset maak je een box waar je tekst in kan schrijven. Als je wilt kan je ook nog een titel per field set toevoegen, die staan hier in het blauw.</p>
+    </fieldset>
+        <fieldset>
+        <legend>Wat doen required, maxlength, min, max en step?</legend>
+        <p>Required laat je een formulier niet verzenden, alleen als alle velden van het formulier zijn ingevuld. maxlength bepald het maximale aantal letters en/of nummers die je kan gebruiken in een formulier. Min bepaald het minimale aantal letters dat in een formulier moeten zitten voordat het valid is. Min bepaald het maximale aantal letters dat in een formulier mogen zijn zodat het valid is. Het step attribuut specificeert het interval tussen legale getallen in een formulier</p>
+     </fieldset>
+        
+    <fieldset>
+        <legend>Welke input pseudo-classes ken je nog niet? Maak met allemaal een demo'tje</legend>
+        <ul><li><strong>:link</strong> - Stijlt niet bezochte links</li>
+<li><strong>:visited</strong> - Stijlt bezochte links</li>
+<li><strong>:hover</strong> - Stijlt een link bij muis erover</li>
+<li><strong>:active</strong> - Stijlt een geactiveerde link</li>
+</ul>
+        <p><b><a href="www.wikipedia.nl" target="_blank">This is a link</a></b></p>
+
+
+    <p>:hover</p>   
+    <div class="hovereffect">Hover over this div element to show the p element
+  <p>Tada! Here I am!</p>
+</div>
+
+<p>:first-child</p>
+
+<div class="child">
+  <p>This is some text.</p>
+  <p>This is some text.</p>
+  <div class="child">
+    <p>This is some text.</p>
+    <p>This is some text.</p>
+  </div>
+</div>
+
+<div class="child">
+  <p>This is some text.</p>
+  <p>This is some text.</p>
+</div>
+    </fieldset>
+</form>
+
+<p>:valid</p>
+<p>:invalid</p>
+
+<form>
+  <label for="email">Email Address:</label>
+  <input id="email" name="email" type="email" placeholder="name@example.com" />
+
+</form>
+
+<form>
+  <label>:readonly</label>    
+  <input type="text" value="Deze tekst kan je alleen lezen" readonly>
+</form>
+
+</body>
