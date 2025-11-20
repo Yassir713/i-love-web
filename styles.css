@@ -1,0 +1,8 @@
+@font-face {
+    font-family: "pixel";
+    src: url(fonts/pixelfont-regular.otf) format("opentype");
+}
+
+body { 
+    font-family: "pixel";
+}
